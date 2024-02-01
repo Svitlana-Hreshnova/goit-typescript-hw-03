@@ -36,4 +36,18 @@ wizard.introduce('I am the mighty wizard');
 wizard.castSpell();
 wizard.levelUp();  // Level up! New level is 16
 
+// Визначення інтерфейсу ICharacter
+interface ICharacter {
+  name: string;
+  level: number;
+
+  introduce(phrase: string): void;
+  levelUp(): void;
+}
+
+// Визначення інтерфейсу ISpellCaster
+interface ISpellCaster {
+  castSpell(): void;
+}
+
 export {};
